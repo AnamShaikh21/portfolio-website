@@ -54,22 +54,3 @@ pip install flask
 Run app
 python app.py
 http://127.0.0.1:5000
-
-
-
-Save the file.
-
----
-
-## STEP 10.3 — Commit README
-
-### WHERE
-👉 VS Code terminal  
-👉 Same path
-
-### COMMANDS
-
-```bash
-git add README.md
-git commit -m "Add project README"
-git push
