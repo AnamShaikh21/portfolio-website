@@ -4,13 +4,35 @@
     <title>Contact</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+<nav class="navbar">
+    <div class="logo">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Anam profile">
+</div>
+
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
 <body>
 
-<h1>Contact Me</h1>
-<p>Email: anam@example.com</p>
-<p>LinkedIn: Coming Soon</p>
+<section class="page-header">
+    <h1>Contact</h1>
+    <p>Let’s connect professionally</p>
+</section>
 
-<a href="/">← Back to Home</a>
+<section class="content-card">
+    <p><strong>Email:</strong> shkanam34@gmail.com</p>
+    <p><strong>LinkedIn:</strong> Anam Shaikh</p>
+    <p><strong>Location:</strong> Bangalore, India</p>
+</section>
+
+<a class="back-link" href="/">← Back to Home</a>
 
 </body>
+
+
 </html>

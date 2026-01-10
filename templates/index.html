@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Anam | Portfolio</title>
+    <title>Anam Shaikh | Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+<nav class="navbar">
+    <div class="logo">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Anam profile">
+</div>
 
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
 <body>
 
-    <h1>Hello, I’m Anam 👋</h1>
-    <p>This is my portfolio website built using Python and Flask.</p>
+<header class="hero">
+    <div class="hero-left">
+        <span class="intro">HELLO 👋</span>
 
-    <hr>
+        <h1>I’m <span class="highlight">Anam Shaikh</span></h1>
 
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/about">About</a> |
-        <a href="/projects">Projects</a> |
-        <a href="/contact">Contact</a>
-    </nav>
+        <h2>
+            Power Platform Developer <br>
+            <span class="sub-role">Python & DevOps Learner</span>
+        </h2>
+
+        <p>
+            3.5+ years of experience building enterprise solutions using
+            Power Apps, Power Automate, SharePoint, and Power BI.
+            Currently expanding into Python backend development and DevOps practices.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/projects" class="btn primary">View My Work</a>
+            <a href="/contact" class="btn outline">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="blob"></div>
+    </div>
+</header>
+
+<section class="stats">
+    <div class="stat-box">
+        <h3>3.5+</h3>
+        <p>Years Experience</p>
+    </div>
+    <div class="stat-box">
+        <h3>10+</h3>
+        <p>Enterprise Apps</p>
+    </div>
+    <div class="stat-box">
+        <h3>AZ-900</h3>
+        <p>Azure Certified</p>
+    </div>
+</section>
 
 </body>
+
+
 </html>

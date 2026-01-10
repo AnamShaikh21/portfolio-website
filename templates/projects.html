@@ -4,16 +4,60 @@
     <title>Projects</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+<nav class="navbar">
+    <div class="logo">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Anam profile">
+</div>
+
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
 <body>
 
-<h1>My Projects</h1>
-<ul>
-    <li>Portfolio Website (Python + Flask)</li>
-    <li>CI/CD Pipeline (Coming Soon)</li>
-    <li>Cloud Deployment (Coming Soon)</li>
-</ul>
+<section class="page-header">
+    <h1>Projects</h1>
+    <p>Enterprise solutions & learning projects</p>
+</section>
 
-<a href="/">← Back to Home</a>
+<section class="projects-grid">
+
+    <div class="project-card">
+        <h3>Change to Service Gateway</h3>
+        <p>
+            Centralized enterprise platform to manage and govern change requests,
+            replacing fragmented manual processes and improving visibility.
+        </p>
+        <span>Power Apps • Power Automate • SharePoint</span>
+    </div>
+
+    <div class="project-card">
+        <h3>Incident & Audit Management Systems</h3>
+        <p>
+            Enterprise solutions for incident tracking and audit reporting,
+            improving operational efficiency and compliance visibility.
+        </p>
+        <span>Power Platform • Power BI • Dataverse</span>
+    </div>
+
+    <div class="project-card">
+        <h3>Python Portfolio Website</h3>
+        <p>
+            Personal portfolio built using Python and Flask with modern UI,
+            GitHub version control, and clean project structure.
+        </p>
+        <span>Python • Flask • HTML • CSS • Git</span>
+    </div>
+
+</section>
+
+<a class="back-link" href="/">← Back to Home</a>
 
 </body>
+
 </html>
