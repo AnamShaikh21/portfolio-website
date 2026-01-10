@@ -15,3 +15,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t portfolio-website .
+
+      - name: Validate Python syntax
+        run: python -m py_compile app.py
