@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Run tests
+        run: |
+          pip install pytest
+          pytest
 
       - name: Build Docker image with commit SHA
         run: |
