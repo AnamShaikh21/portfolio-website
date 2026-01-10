@@ -13,8 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Build Docker image
-        run: docker build -t portfolio-website .
+      - name: Build Docker image with commit SHA
+        run: |
+          docker build \
+            -t portfolio-website:${{ github.sha }} \
+            -t portfolio-website:latest \
+            .
+
 
       - name: Validate Python syntax
         run: python -m py_compile app.py
