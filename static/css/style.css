@@ -215,9 +215,9 @@ body {
 }
 
 .hero-container {
+  position: relative;              /* 👈 important */
   display: flex;
   align-items: center;
-  justify-content: space-between;
   min-height: 100vh;
   padding: 0 80px;
 }
@@ -227,9 +227,10 @@ body {
 }
 
 .hero-image {
-  width: 40%;
-  display: flex;
-  justify-content: center;
+  position:absolute ;
+  right: 165px;                     /* 👈 controls how far right */
+  top: 65%;
+  transform: translateY(-50%);
 }
 
 .profile-img {
